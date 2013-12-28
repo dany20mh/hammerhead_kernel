@@ -367,7 +367,7 @@ AFLAGS_KERNEL	=
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
 
 LOW_ARM_FLAGS	= -pipe -mcpu=cortex-a15 \
-                  -mtune=cortex-a15 -marm -mfpu=neon \
+                  -mtune=cortex-a15 -marm -mfpu=neon-vfpv4 \
                   -mfloat-abi=softfp -fno-pic -munaligned-access
 MODULES		= -fmodulo-sched -fmodulo-sched-allow-regmoves
 KERNEL_MODS	= $(LOW_ARM_FLAGS) $(MODULES)
