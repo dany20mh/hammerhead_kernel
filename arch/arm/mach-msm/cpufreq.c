@@ -290,7 +290,7 @@ static int __cpuinit msm_cpufreq_init(struct cpufreq_policy *policy)
 
 	// Predefine max/min frequencies used for device boot
 	policy->max = 2265600;
-	policy->min = 268800;
+	policy->min = 300000;
 
 	cur_freq = acpuclk_get_rate(policy->cpu);
 	if (cpufreq_frequency_table_target(policy, table, cur_freq,
